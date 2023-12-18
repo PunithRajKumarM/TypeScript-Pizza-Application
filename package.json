@@ -5,9 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run type-check && webpack --mode production",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "npm run type-check && webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
     "type-check": "tsc"
   },
